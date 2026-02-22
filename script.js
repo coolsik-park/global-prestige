@@ -132,8 +132,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (mobileBtn) {
         mobileBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            const isActive = navLinks.classList.toggle('active');
             navRight.classList.toggle('active');
+
+            // Toggle full screen menu class and body scroll lock
+            if (isActive) {
+                document.body.classList.add('no-scroll');
+                navbar.classList.add('menu-open');
+            } else {
+                document.body.classList.remove('no-scroll');
+                navbar.classList.remove('menu-open');
+            }
         });
     }
 
@@ -154,6 +163,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (window.innerWidth <= 768) {
                 navLinks.classList.remove('active');
                 navRight.classList.remove('active');
+                document.body.classList.remove('no-scroll');
+                navbar.classList.remove('menu-open');
             }
         });
     });
