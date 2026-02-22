@@ -96,6 +96,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
 
+            // On mobile, if this is a dropdown toggle, don't scroll
+            if (window.innerWidth <= 768 && this.parentElement.classList.contains('dropdown')) {
+                return;
+            }
+
             e.preventDefault();
             const targetElement = document.querySelector(targetId);
 
@@ -158,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Close mobile menu when a link is clicked
-    document.querySelectorAll('.nav-links li a, .nav-btn, .lang-menu li a').forEach(a => {
+    document.querySelectorAll('.nav-links li a:not(.dropdown > a), .nav-btn, .lang-menu li a:not(.dropdown > a)').forEach(a => {
         a.addEventListener('click', () => {
             if (window.innerWidth <= 768) {
                 navLinks.classList.remove('active');
