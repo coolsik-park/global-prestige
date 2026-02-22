@@ -794,12 +794,78 @@ footer {
 
 @media (max-width: 768px) {
 
-    .nav-links,
-    .nav-btn {
+    body.no-scroll {
+        overflow: hidden;
+    }
+
+    .navbar.menu-open {
+        background: rgba(10, 10, 10, 0.98) !important;
+        height: 100vh;
+        overflow-y: auto;
+        align-items: flex-start;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .logo,
+    .mobile-menu-btn {
+        z-index: 10;
+        position: relative;
+    }
+
+    .nav-links {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+        background: transparent;
+        padding: 0;
+        box-shadow: none;
+        position: static;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-right {
+        display: none !important;
+    }
+
+    .nav-right.active {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+        position: static;
+        background: transparent;
+        padding: 20px 0;
+        box-shadow: none;
+        gap: 15px !important;
+    }
+
+    .nav-btn {
+        display: block;
+        width: 100%;
+        text-align: center;
     }
 
     .mobile-menu-btn {
+        display: block;
+    }
+
+    .dropdown {
+        padding: 5px 0;
+        margin: 0;
+    }
+
+    .dropdown-menu {
+        display: none;
+    }
+
+    .dropdown.active .dropdown-menu {
         display: block;
     }
 

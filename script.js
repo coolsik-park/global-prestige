@@ -126,9 +126,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Simple mobile menu toggle
     const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    const navRight = document.querySelector('.nav-right');
+    const dropdowns = document.querySelectorAll('.dropdown > a');
+
     if (mobileBtn) {
         mobileBtn.addEventListener('click', () => {
-            alert('모바일 메뉴가 오픈됩니다. (기능 구현 시 전체메뉴 오버레이 추가 가능)');
+            navLinks.classList.toggle('active');
+            navRight.classList.toggle('active');
         });
     }
+
+    // Handle mobile dropdown clicks
+    dropdowns.forEach(dropdownAttr => {
+        dropdownAttr.addEventListener('click', (e) => {
+            // Only prevent default and toggle if we're on mobile
+            if (window.innerWidth <= 768) {
+                e.preventDefault();
+                dropdownAttr.parentElement.classList.toggle('active');
+            }
+        });
+    });
+
+    // Close mobile menu when a link is clicked
+    document.querySelectorAll('.nav-links li a, .nav-btn, .lang-menu li a').forEach(a => {
+        a.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                navLinks.classList.remove('active');
+                navRight.classList.remove('active');
+            }
+        });
+    });
 });

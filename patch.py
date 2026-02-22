@@ -135,9 +135,9 @@ replacements = [
                             <li><i class="fa-solid fa-check"></i> 현지 법인 설립 대행 및 라이센스 취득 올인원 서비스</li>
                             <li><i class="fa-solid fa-check"></i> 뱅킹 셋업, 오피스 공간 어레인지 및 초기 채용 지원</li>
                         </ul>''',
-        '''<h3 class="service-name" data-i18n="svc1_title">I. Seamless Incorporation<br><span>초격차 법인 설립 솔루션</span></h3>
+        '''<h3 class="service-name" data-i18n="svc1_title">I. Seamless Business Setup<br><span>초격차 비즈니스 셋업 솔루션</span></h3>
                         <p class="service-desc" data-i18n="svc1_desc">
-                            해외 시장 진출의 첫 단추, 완벽하게 채워드립니다. 글로벌 대형 로펌 및 회계법인 네트워크(EY, PwC 수준의 공신력)와 검증된 최적의 툴을 활용하여 신속하고 리스크 없는 법인 설립(Incorporation) 절차를 안내합니다.
+                            해외 진출 시 직면하는 복잡한 규제와 행정적 장벽, 완벽하게 해소해 드립니다. 글로벌 최고 수준의 공신력을 갖춘 로펌 및 회계법인 네트워크와 검증된 최적의 툴을 활용하여 신속하고 리스크 없는 사업 기반 구축 절차를 안내합니다.
                         </p>
                         <ul class="service-list">
                             <li data-i18n="svc1_l1"><i class="fa-solid fa-check"></i> 1:1 맞춤형 지배구조 설계 및 조세 최적화 플랜</li>
@@ -146,7 +146,7 @@ replacements = [
                         </ul>'''
     ),
     (
-        '''<h3 class="service-name">II. Global Business Matching<br><span>비즈니스 발굴 및 절대 파트너 연결</span></h3>
+        '''<h3 class="service-name">II. Global Business Matching<br><span>비즈니스 발굴 및 서비스 파트너 연결</span></h3>
                         <p class="service-desc">
                             Lava IP, Prime Consultancy 등의 심도 있는 시장 분석 및 파트너 발굴 노하우를 바탕으로, 단순 소개가 아닌 실질적 수익 모델을 창출하는 'B2B 미팅 및 JV 매칭'을 제공합니다.
                         </p>
@@ -155,7 +155,7 @@ replacements = [
                             <li><i class="fa-solid fa-check"></i> 검증된 현지 디스트리뷰터, 벤더, 잠재 고객사 리드 제너레이션</li>
                             <li><i class="fa-solid fa-check"></i> M&A 및 현지 파트너십 협상 전 과정 전략 자문</li>
                         </ul>''',
-        '''<h3 class="service-name" data-i18n="svc2_title">II. Global Business Matching<br><span>비즈니스 발굴 및 절대 파트너 연결</span></h3>
+        '''<h3 class="service-name" data-i18n="svc2_title">II. Global Business Matching<br><span>비즈니스 발굴 및 서비스 파트너 연결</span></h3>
                         <p class="service-desc" data-i18n="svc2_desc">
                             심도 있는 시장 분석 및 파트너 발굴 노하우를 바탕으로, 단순 소개가 아닌 실질적 수익 모델을 창출하는 'B2B 미팅 및 JV 매칭'을 제공합니다.
                         </p>
@@ -180,7 +180,7 @@ replacements = [
                             비즈니스의 마침표는 품격 있는 호스피탈리티입니다. 완벽한 럭셔리 컨시어지로, 당신과 귀하의 귀빈을 위한 맞춤형 코퍼레이트 이벤트 및 밀착 의전을 수행합니다.
                         </p>
                         <ul class="service-list">
-                            <li data-i18n="svc3_l1"><i class="fa-solid fa-check"></i> 공항 VIP 패스트트랙, 프라이빗 리무진 대기 및 경찰/사설 경호 에스코트</li>
+                            <li data-i18n="svc3_l1"><i class="fa-solid fa-check"></i> VVIP 전용 프라이빗 리무진 대기 및 VIP 밀착 에스코트</li>
                             <li data-i18n="svc3_l2"><i class="fa-solid fa-check"></i> 미쉐린 스타 다이닝, 익스클루시브 프라이빗 파티, 요트/전세기 대관</li>
                             <li data-i18n="svc3_l3"><i class="fa-solid fa-check"></i> 하이엔드 기업 행사기획, 레드카펫 의전 및 1:1 라이프스타일 케어</li>
                         </ul>'''
