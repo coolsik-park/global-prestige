@@ -90,6 +90,36 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Scroll Spy for Navigation Links
+    const sections = document.querySelectorAll('header[id], section[id]');
+    const navItems = document.querySelectorAll('.nav-links li a, .nav-btn');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const scrollYPos = window.scrollY;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            // A threshold of ~200px to trigger when the section is mostly in view
+            if (scrollYPos >= (sectionTop - 200)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navItems.forEach(a => {
+            a.classList.remove('active');
+            const href = a.getAttribute('href');
+            if (!href) return;
+
+            // Highlight exact match.
+            // Note: `#services` dropdown will be active when current === 'services'
+            if (href === `#${current}`) {
+                a.classList.add('active');
+            }
+        });
+    });
+
     // Smooth scrolling for navigation links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
